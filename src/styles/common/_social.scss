@@ -1,0 +1,25 @@
+.socials__item {
+  display: inline-block;
+  margin-left: rem(20px);
+  &:first-child {
+    margin-left: 0;
+
+  }
+}
+
+.socials__link {
+  display: inline-block;
+}
+
+.socials__icon {
+  display: inline-block;
+  vertical-align: middle;
+  fill: #595959;
+  width: rem(20px);
+  height: rem(20px);
+  &:hover {
+    fill: $white;
+
+  }
+}
+

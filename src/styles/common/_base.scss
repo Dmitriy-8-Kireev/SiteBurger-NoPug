@@ -1,0 +1,109 @@
+html {
+  @include tablets {
+    font-size: 15px;
+  }
+  @include phones {
+    font-size: 13px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width:  rem(960px);
+  width: 95%;
+}
+html, body {
+  height: 100%;
+
+}
+body {
+  font-size: rem(16px);
+  text-align: center;
+}
+.section--hello {
+  background-image: url("../images/video-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+
+}
+.section--about-us{
+  background: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.wrapper {
+  overflow: hidden;
+  //min-width: rem(1100px);
+  min-width:  100%;
+}
+
+.section {
+  height: 100vh;
+  min-height: rem(650px);
+
+}
+* {
+  margin: 0;
+}
+.section--slider {
+
+}
+
+
+li {
+  list-style: none;
+  padding: 0;
+}
+.team {
+  background: url("../images/Rectangle2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.menu-bar {
+  background: url("../images/photo-1428660386617-8d277e7deaf2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.order {
+  background: url("../images/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+* {
+  box-sizing:border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: rem(1px);
+  width: rem(1px);
+  margin: rem(-1px);
+  padding: 0;
+  border: 0;
+}
+.map {
+  background: url("../images/map.jpg") no-repeat center center ;
+  background-size: cover;
+  position: relative;
+
+
+}
+ul {
+  padding: 0;
+}

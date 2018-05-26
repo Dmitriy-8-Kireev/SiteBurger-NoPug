@@ -1,0 +1,28 @@
+//переменные
+$tablets: 768px;
+$phones: 480px;
+
+@import 'common/slider';
+//media
+@import "common/_media.scss";
+@import "common/_config.scss";
+@import "common/_normalize.scss";
+@import "common/_color.scss";
+@import "common/_fixed-menu";
+@import 'common/fonts.scss';
+@import "common/_base.scss";
+@import "common/_flexbox.scss";
+@import "common/_logo.scss";
+@import "common/_menu.scss";
+@import "common/_header.scss";
+@import "common/_button.scss";
+@import "common/_content.scss";
+@import "common/_content-about.scss";
+@import "common/_reviews.scss";
+@import "common/_team.scss";
+@import "common/_fixed-menu";
+@import "common/_section--menu.scss";
+@import "common/_form.scss";
+@import "common/_map.scss";
+@import "common/_social.scss";
+@import "common/_hamburger-menu-link.scss";

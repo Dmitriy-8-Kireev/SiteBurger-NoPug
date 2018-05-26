@@ -1,0 +1,93 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/Rectangle9.jpg");
+  display: flex;
+
+  @include phones {
+    flex-direction: column;
+    height: rem(116px);
+
+  }
+}
+
+.map {
+  position: relative;
+}
+
+.address__location {
+  font-family: 'ubuntulight';
+  font-size: rem(14px);
+  font-style: normal;
+  color: $white;
+  text-align: left;
+  @include phones {
+    text-align: center;
+  }
+
+}
+
+.address__phone {
+  font-family: 'ubuntubold';
+  font-size: rem(14px);
+  font-style: normal;
+  color: $red-orange;
+  text-align: left;
+  margin-top: rem(10px);
+
+  &:before {
+    background: url("../images/icons/phone.svg") no-repeat;
+    width: rem(12px);
+    height: rem(11px);
+    display: inline-block;
+    content: "";
+    margin-right: rem(5px);
+  }
+  @include phones {
+    text-align: center;
+  }
+}
+
+.container--footer {
+  display: flex;
+  margin-top: rem(10px);
+  margin-bottom: rem(10px);
+
+  @include phones {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.address {
+  width: 50%;
+  @include phones {
+    width: 100%;
+justify-content: center;
+  }
+}
+
+.socials {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: rem(10px);
+
+}
+
+.socials {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: rem(10px);
+
+  @include phones {
+    width: 100%;
+    justify-content: center;
+  }
+
+}

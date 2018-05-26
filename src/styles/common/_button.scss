@@ -1,0 +1,50 @@
+.button {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'ubuntulight';
+  font-size: rem(13px);
+  font-weight: 500;
+  /* line-height: rem(30px); */
+  text-transform: uppercase;
+  /* width: rem(97px); */
+  /* height: rem(35px); */
+  border-radius: rem(5px);
+  //background-color: #e45028;
+  /* align-self: baseline; */
+  padding: rem(9px) rem(18px);
+  border: none;
+
+}
+
+.button--red {
+  background-color: #e45028;
+  &:hover {
+    background-color: darken($red, 7%);
+
+  }
+
+}
+
+.button--gray {
+  background-color: #2f3234;
+  &:hover {
+    background-color: darken($grey, 7%);
+  }
+  &:after {
+    content: 'Подробнее';
+  }
+  @include phones {
+    &:after {
+      content: 'Читать отзыв';
+    }
+  }
+}
+
+.form__reset {
+  background-color: transparent;
+  border: none;
+  font-family: 'ubuntulight';
+  color: $white;
+  margin-left: rem(15px);
+
+}

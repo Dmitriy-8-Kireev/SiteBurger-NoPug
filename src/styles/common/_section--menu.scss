@@ -1,0 +1,89 @@
+.menu-bar__link {
+  width: rem(80px);
+  display: block;
+  height: 100%;
+  float: left;
+  text-decoration: none;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    .menu-bar__title {
+      color: $orange;
+    }
+  }
+  @include phones {
+    width: 3rem;
+  }
+}
+
+.title--white {
+  color: $white;
+}
+
+.menu-bar__content {
+  width: 0;
+  overflow: hidden;
+  background-color: $gray-opas;
+}
+
+.menu-bar__text {
+  width: rem(540px);
+  display: inline-block;
+  color: $white;
+  font-family: 'ubuntulight';
+  font-size: rem(14px);
+  padding: rem(60px) rem(35px) 0 rem(35px);
+  line-height: rem(24px);
+  text-align: left;
+}
+
+.menu-bar__accordion {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+}
+
+.menu-bar__item {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.title--white {
+  position: absolute;
+  left: rem(94px);
+  top: rem(111px);
+  @include tablets {
+    left: rem(23px);
+    top: rem(114px);
+  }
+
+}
+
+.menu-bar__title {
+
+  font-family: 'gagalin';
+  font-size: rem(40px);
+  color: #fff;
+  white-space: nowrap;
+  position: absolute;
+  bottom: rem(80px);
+  transform: rotate(-90deg);
+  left: 50%;
+  transform-origin: 0;
+  @include tablets {
+    bottom: rem(40px);
+  }
+
+
+}
+
+.menu-bar__item--active {
+  .menu-bar__content {
+    width: rem(540px);
+  }
+}

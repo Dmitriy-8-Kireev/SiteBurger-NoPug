@@ -1,0 +1,105 @@
+
+.features {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  width: 100%;
+  align-self: baseline;
+  padding-top: rem(30px);
+  @include phones {
+    flex-direction: column;
+
+
+
+  }
+}
+
+.container--center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-self: baseline;
+  align-content: stretch;
+  height: 100%;
+}
+
+.features__title {
+  color: #2f3234;
+  font-size: rem(24px);
+  font-weight: 500;
+  line-height: rem(28.14px);
+  letter-spacing: rem(-0.6px);
+  font-family: 'lifehackmedium';
+  margin-top: rem(35px);
+  display: block;
+  @include phones {
+    margin-top: 0;
+
+  }
+}
+
+.features__text {
+  font-family: 'ubuntulight';
+  font-size: rem(14px);
+  font-weight: 300;
+  line-height: rem(24.07px);
+  opacity: 0.8;
+  color: #2f3234;
+  padding-top: rem(10px);
+  margin-top: rem(10px);
+
+}
+
+.features__item {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: rem(10px);
+  padding-left: rem(10px);
+  align-self: baseline;
+  @include phones {
+    flex-direction: row;
+    margin-bottom: 40px;
+
+  }
+}
+
+.title--black {
+  color: #2f3234;
+  text-align: center;
+  /*align-self: center;*/
+
+}
+
+.content-about {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  margin-bottom: rem(55px);
+}
+
+.features {
+  @include phones {
+
+  }
+}
+
+.features__text-wrap {
+  @include phones {
+    text-align: left;
+    width: 70%;
+    padding-left: 10px;
+  }
+}
+
+.features__img-wrap {
+  @include phones {
+    width: 27%;
+  }
+}
