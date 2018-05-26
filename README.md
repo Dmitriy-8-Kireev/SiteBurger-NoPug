@@ -1,6 +1,6 @@
 ## Gulp-webpack 2018
 ## Сайт портфолио
-my site in portfolio https://dmitriy-8-kireev.github.io/SiteBurger-NoPug/
+my site in portfolio https://dmitriy-8-kireev.github.io/SiteBurger-NoPug/build/
 
 
 
